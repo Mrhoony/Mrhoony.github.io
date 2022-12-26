@@ -14,7 +14,7 @@ img_path: /assets/img/posts/TeamWorkGuide/
 
 ### 리포지토리 로컬로 가져오기
 보내드린 초대를 수락하면 깃허브에 팀프로젝트 리포지토리의 접근이 허가됩니다. 리포지토리 홈 화면에서는 다양한 기능들을 사용할 수 있습니다.
-![TeamWorkGuide](01.png)
+![TeamWorkGuide](01.PNG)
 
 `초록색 Code` 버튼을 클릭한 후 `Open with GitHub Desktop` 버튼을 클릭해 깃허브 데스크탑 앱을 통해 리포지토리를 로컬로 가져올 수 있습니다.
 ```
@@ -22,21 +22,21 @@ img_path: /assets/img/posts/TeamWorkGuide/
 설정된 브랜치 보호 규칙에 의해 커밋이나 푸쉬를 할 수 없습니다.
 반드시 개인 브랜치를 생성한 후에 로컬로 클로닝해주세요.
 ```
-![TeamWorkGuide](02.png)
+![TeamWorkGuide](02.PNG)
 
 ---
 
 ### 브랜치 생성하기
 브랜치란 여러명의 개발자들이 동일한 소스코드 내에서 동시에 다른 작업들을 진행하기 위해 각자의 독립적인 작업영역을 분리하는 기능입니다.
-![TeamWorkGuide](03.png)
+![TeamWorkGuide](03.PNG)
 리포지토리 홈 화면에서 'branch' 버튼을 클릭한 후, 다음 화면에서 우측 'new branch'를 클릭해서 자신의 이름 알파벳 이니셜로 브랜치를 생성해줍니다.
-![TeamWorkGuide](04.png)
+![TeamWorkGuide](04.PNG)
 
 저희는 3명이니 브랜치의 갯수는 main 브랜치를 포함해 총 4개입니다.  
 main 브랜치는 모든 소스코드를 총괄하며, 프로젝트 내에서 서브 프로젝트가 진행 될 때 원본이 되는 소스코드를 가진 브랜치입니다. 따라서 main 브랜치에서는 작업을 진행하지 않고 본인 이름의 알파벳 브랜치를 생성한 뒤 해당 브랜치에서 작업을 진행하시면 되겠습니다.  
 
 리포지토리 홈 화면에서 생성한 브랜치로 변경한 뒤 리포지토리를 클론해주시면 됩니다.
-![TeamWorkGuide](10.png)
+![TeamWorkGuide](10.PNG)
 
 ---
 
@@ -48,7 +48,7 @@ DirectX를 배우면서 VS 또는 PS 단계로 ConstantBuffer를 보내는 방�
 ```
 
 작업을 진행한 뒤 제목을 추가한 뒤 버튼을 눌러 커밋을 진행할 수 있습니다. 설명은 선택사항입니다. 또한 깃허브 데스크탑을 이용한다면 개방형 포맷의 경우 앱의 우측 프리뷰 패널에서 변경된 내용을 확인할 수 있습니다.
-![TeamWorkGuide](05.png)
+![TeamWorkGuide](05.PNG)
 
 커밋 시 제목을 작성할 때는 해당 커밋의 내용을 빠르게 파악할 수 있도록 접두에 키워드를 이용하는데 추천하는 키워드는 다음과 같습니다.
 ```
@@ -63,18 +63,18 @@ Delete : 파일 또는 기능의 삭제시
 ```
 
 커밋 후에 내용을 변경하고 싶다면 커밋 버튼 밑에 생성되는 `Undo` 버튼을 클릭해서 커밋을 되돌릴 수 있습니다.
-![TeamWorkGuide](06.png)
+![TeamWorkGuide](06.PNG)
 
 커밋이 문제가 없다고 판단될 시 우상단 푸쉬 버튼을 클릭해 푸쉬를 진행하면 되겠습니다.
-![TeamWorkGuide](07.png)
+![TeamWorkGuide](07.PNG)
 
 푸쉬 후 코드의 결함이 발생하여 되돌려야 할 경우가 있습니다. 그 경우에 해당하는 행위를 리버트라고 합니다. 히스토리 탭을 누른 후 되돌아가고 싶은 푸쉬를 우클릭 후 `revert changes in commit` 버튼을 클릭합니다.
-![TeamWorkGuide](08.png)
+![TeamWorkGuide](08.PNG)
 
 리버트 버튼을 클릭하게 되면 리포지토리의 내용을 리버트 한다는 내용의 커밋이 생성됩니다. 푸쉬버튼을 클릭해 해당 내용을 보내주게 되면 되돌아오는데 성공하게 됩니다.  
 
 이 때 주의사항으로 리버트를 하기 위해선 현재 로컬에 변경사항이 없어야 합니다. `revert changes in commit` 버튼을 클릭하게 되면 로컬에는 해당 사항이 바로 적용되기 때문인 것으로 추측됩니다.
-![TeamWorkGuide](09.png)
+![TeamWorkGuide](09.PNG)
 
 ---
 
@@ -90,11 +90,11 @@ Delete : 파일 또는 기능의 삭제시
 - 줄여서 `PR` 이라고 합니다.
 ```
 주 목적은 `main 브랜치에서의 문제발생 예방`이지만 직접 작성한 코드가 아니라도 코드리뷰를 통해 해당 코드의 경험치를 획득해 갈 수 있기 때문에 PR을 사용하도록 하겠습니다.
-![TeamWorkGuide](11.png)
-![TeamWorkGuide](12.png)
+![TeamWorkGuide](11.PNG)
+![TeamWorkGuide](12.PNG)
 
 PR은 리포지토리의 PR 탭에서 요청을 작성할 수 있습니다. 깃허브 데스크탑의 PR 버튼을 누르면 PR 탭으로 바로 들어올 수 있습니다.
-![TeamWorkGuide](13.png)
+![TeamWorkGuide](13.PNG)
 
 PR을 작성할 때는 아래의 항목들을 설정해줘야 합니다.
 base branch : 병합을 받을 브랜치, 거의 대부분 main
